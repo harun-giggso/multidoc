@@ -416,7 +416,7 @@
             "allowedOrigins": [ "https://portal.azure.com" ]
           },
           "use32BitWorkerProcess": false,
-          "linuxFxVersion": "DOCKER|fruocco/oai-batch:latest",
+          "linuxFxVersion": "DOCKER|harunbashanoor/oai-batch:latest",
           "appCommandLine": "",
           "alwaysOn": true
         },
