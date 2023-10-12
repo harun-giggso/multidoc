@@ -22,12 +22,12 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run:
-        docker build . --file WebApp.Dockerfile --tag fruocco/oai-embeddings:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER;
+        docker build . --file WebApp.Dockerfile --tag harunbashanoor/oai-embeddings:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER;
         docker tag harunbashanoor/oai-embeddings:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER harunbashanoor/oai-embeddings:latest;
         docker push harunbashanoor/oai-embeddings:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER;
         docker push harunbashanoor/oai-embeddings:latest;
         
-        docker build . --file BatchProcess.Dockerfile --tag fruocco/oai-batch:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER;
+        docker build . --file BatchProcess.Dockerfile --tag harunbashanoor/oai-batch:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER;
         docker tag harunbashanoor/oai-batch:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER harunbashanoor/oai-batch:latest;
         docker push harunbashanoor/oai-batch:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER;
         docker push harunbashanoor/oai-batch:latest;
