@@ -3,7 +3,7 @@ import azure.functions as func
 from utilities.helper import LLMHelper
 
 def main(msg: func.QueueMessage) -> None:
-    print(done)
+    print('done')
     logging.info('Python queue trigger function processed a queue item: %s',
                  msg.get_body().decode('utf-8'))
 
