@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import logging
 import re
 import hashlib
+import datetime
 
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.llms import AzureOpenAI
