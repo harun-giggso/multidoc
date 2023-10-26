@@ -6,6 +6,7 @@ from utilities.helper import LLMHelper
 queue_name = os.environ['QUEUE_NAME']
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
+    print('done')
     logging.info('Requested to start processing all documents received')
     # Set up LLM Helper
     llm_helper = LLMHelper()
